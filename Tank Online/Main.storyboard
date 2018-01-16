@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="krP-wQ-YUy">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Navigation Controller-->
+        <scene sceneID="wxb-Hn-Ico">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" navigationBarHidden="YES" id="krP-wQ-YUy" customClass="GameNavigationController" customModule="Tank_Online" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5zy-Pj-u2V">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hMI-Zq-nUq" kind="relationship" relationship="rootViewController" id="Zw1-Su-AVP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcy-7t-V2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2055" y="-1389"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="Gr0-lh-m4z">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="hMI-Zq-nUq" customClass="GameViewController" customModule="Tank_Online" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CVd-7c-o4X"/>
+                        <viewControllerLayoutGuide type="bottom" id="syR-QX-Swm"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="center" id="jgv-me-7uZ" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <skView contentMode="center" fixedFrame="YES" sceneName="MainMenu.sks" translatesAutoresizingMaskIntoConstraints="NO" id="tAx-x4-dBT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </skView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHe-dO-RMb" userLabel="startButton">
+                                <rect key="frame" x="82" y="112" width="251" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="start"/>
+                                <connections>
+                                    <action selector="startButtonClicked" destination="hMI-Zq-nUq" eventType="touchUpInside" id="L0M-cU-bpB"/>
+                                    <segue destination="rml-h7-aJl" kind="show" id="3ag-1I-SPu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5W-O5-0EA" userLabel="infoButton">
+                                <rect key="frame" x="122" y="523" width="170" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Info"/>
+                                <connections>
+                                    <action selector="infoButtonClicked:" destination="hMI-Zq-nUq" eventType="touchUpInside" id="3XO-kO-6ux"/>
+                                    <segue destination="GAL-TA-h5u" kind="show" id="TAg-Vd-JY2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNr-o1-WY0">
+                                <rect key="frame" x="151" y="393" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="start"/>
+                                <connections>
+                                    <action selector="startMultiplayerClicked" destination="hMI-Zq-nUq" eventType="touchUpInside" id="Z4G-Oa-KU2"/>
+                                    <segue destination="rml-h7-aJl" kind="show" id="XbP-LM-kNY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64902865886688232" green="0.32879161834716797" blue="0.22544467449188232" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="deviceRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Lgh-8c-CuL"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="yKX-s2-HZ6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wQ-k0-r4d" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1184.0579710144928" y="-1389.9456521739132"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="5h1-C4-7NF">
+            <objects>
+                <viewController id="rml-h7-aJl" customClass="GameViewController" customModule="Tank_Online" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RUQ-CH-YyW" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="6" contentMode="topRight" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-lh-TID">
+                                <rect key="frame" x="0.0" y="9" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="hMI-Zq-nUq" kind="show" id="YUC-qw-uIY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <viewLayoutGuide key="safeArea" id="JFW-aT-v2z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zr8-Yd-FhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.31884057971016" y="-1389.1304347826087"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FZL-uT-COR">
+            <objects>
+                <viewController id="GAL-TA-h5u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pqI-KV-hnm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="6" contentMode="topRight" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anW-Sq-h3x">
+                                <rect key="frame" x="0.0" y="10" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="hMI-Zq-nUq" kind="show" id="nOh-cG-bIB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d0f-GJ-keZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lv3-VI-OdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="-1381"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Info" width="256" height="256"/>
+        <image name="start" width="251" height="201"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="TAg-Vd-JY2"/>
+        <segue reference="3ag-1I-SPu"/>
+        <segue reference="nOh-cG-bIB"/>
+    </inferredMetricsTieBreakers>
+</document>
