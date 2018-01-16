@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="krP-wQ-YUy">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Navigation Controller-->
+        <scene sceneID="wxb-Hn-Ico">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" navigationBarHidden="YES" id="krP-wQ-YUy" customClass="GameNavigationController" customModule="Tank_Online" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5zy-Pj-u2V">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hMI-Zq-nUq" kind="relationship" relationship="rootViewController" id="Zw1-Su-AVP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcy-7t-V2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2055" y="-1389"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="Gr0-lh-m4z">
+            <objects>
+                <viewController id="hMI-Zq-nUq" customClass="GameViewController" customModule="Tank_Online" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CVd-7c-o4X"/>
+                        <viewControllerLayoutGuide type="bottom" id="syR-QX-Swm"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="jgv-me-7uZ" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHe-dO-RMb" userLabel="startButton">
+                                <rect key="frame" x="157" y="263" width="100" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.15372869372367859" green="0.12644916772842407" blue="0.036432653665542603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start Single">
+                                    <color key="titleColor" red="0.055556461219999999" green="0.02762875892" blue="0.01077058166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonClicked:" destination="hMI-Zq-nUq" eventType="touchUpInside" id="rXZ-BA-sae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNr-o1-WY0">
+                                <rect key="frame" x="151" y="393" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Multiplayer">
+                                    <color key="titleColor" red="0.055556461219999999" green="0.02762875892" blue="0.01077058166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startMultiplayerClicked:" destination="hMI-Zq-nUq" eventType="touchUpInside" id="q2B-UH-q6x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5W-O5-0EA" userLabel="infoButton">
+                                <rect key="frame" x="192" y="505" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleColor" red="0.055556461219999999" green="0.02762875892" blue="0.01077058166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoButtonClicked:" destination="hMI-Zq-nUq" eventType="touchUpInside" id="TE1-A8-vvW"/>
+                                    <segue destination="GAL-TA-h5u" kind="show" id="TAg-Vd-JY2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8727681040763855" green="0.92900931835174561" blue="0.96659833192825317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="deviceRGB"/>
+                        <viewLayoutGuide key="safeArea" id="sV9-fq-Gk5"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="yKX-s2-HZ6"/>
+                    <connections>
+                        <outlet property="infoButton" destination="N5W-O5-0EA" id="7vK-wt-0u7"/>
+                        <outlet property="multiButton" destination="lNr-o1-WY0" id="uSD-Ms-xml"/>
+                        <outlet property="startButton" destination="gHe-dO-RMb" id="DNY-0K-clk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wQ-k0-r4d" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1184.0579710144928" y="-1389.9456521739132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FZL-uT-COR">
+            <objects>
+                <viewController id="GAL-TA-h5u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pqI-KV-hnm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="6" contentMode="topRight" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anW-Sq-h3x">
+                                <rect key="frame" x="0.0" y="10" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="hMI-Zq-nUq" kind="show" id="nOh-cG-bIB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d0f-GJ-keZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lv3-VI-OdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="-1381"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Zw1-Su-AVP"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6637457E1FE56E0A004200C3 /* GameNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637457D1FE56E0A004200C3 /* GameNavigationController.swift */; };
+		663745801FE5822E004200C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6637457F1FE5822E004200C3 /* Main.storyboard */; };
+		6648BD6C1FF6BBC6006935B7 /* ShootButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648BD6B1FF6BBC6006935B7 /* ShootButton.swift */; };
+		6648BD6E1FFC1566006935B7 /* Eagle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648BD6D1FFC1566006935B7 /* Eagle.swift */; };
+		667F22B91FE690B200A28EA2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667F22B81FE690B200A28EA2 /* GameKit.framework */; };
+		66A8F07F1FD88466004EF568 /* MultiplayerNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8F07E1FD88465004EF568 /* MultiplayerNetworking.swift */; };
+		66A8F0811FD88475004EF568 /* GameKitStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8F0801FD88475004EF568 /* GameKitStuff.swift */; };
+		66EFCFD02008CE3900C88696 /* Bot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EFCFCF2008CE3900C88696 /* Bot.swift */; };
+		9282F4C31E73543400446107 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282F4C21E73543400446107 /* Grid.swift */; };
+		928E0CF21E69E18D00A25161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928E0CF11E69E18D00A25161 /* AppDelegate.swift */; };
+		928E0CF61E69E18D00A25161 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 928E0CF51E69E18D00A25161 /* Actions.sks */; };
+		928E0CFA1E69E18D00A25161 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928E0CF91E69E18D00A25161 /* GameViewController.swift */; };
+		928E0CFF1E69E18D00A25161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928E0CFE1E69E18D00A25161 /* Assets.xcassets */; };
+		928E0D021E69E18D00A25161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928E0D001E69E18D00A25161 /* LaunchScreen.storyboard */; };
+		928E0D151E69E42C00A25161 /* GamePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928E0D141E69E42C00A25161 /* GamePlayScene.swift */; };
+		928E0D171E69E62D00A25161 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 928E0D161E69E62D00A25161 /* StarField.sks */; };
+		92B169CA1EBB33A100625919 /* MyTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 92B169C91EBB33A100625919 /* MyTileSet.sks */; };
+		92E3EA7B1E7DC84B0027DEB4 /* Tank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3EA7A1E7DC84B0027DEB4 /* Tank.swift */; };
+		92E3EA7F1E7DCFFD0027DEB4 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3EA7E1E7DCFFD0027DEB4 /* Bullet.swift */; };
+		92E3EA811E7DD00D0027DEB4 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3EA801E7DD00D0027DEB4 /* Wall.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6637457D1FE56E0A004200C3 /* GameNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameNavigationController.swift; sourceTree = "<group>"; };
+		6637457F1FE5822E004200C3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6648BD6B1FF6BBC6006935B7 /* ShootButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShootButton.swift; sourceTree = "<group>"; };
+		6648BD6D1FFC1566006935B7 /* Eagle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eagle.swift; sourceTree = "<group>"; };
+		667F22B81FE690B200A28EA2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		667F22BA1FE690BC00A28EA2 /* Tank Online.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tank Online.entitlements"; sourceTree = "<group>"; };
+		66A8F07E1FD88465004EF568 /* MultiplayerNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerNetworking.swift; sourceTree = "<group>"; };
+		66A8F0801FD88475004EF568 /* GameKitStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameKitStuff.swift; sourceTree = "<group>"; };
+		66EFCFCF2008CE3900C88696 /* Bot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot.swift; sourceTree = "<group>"; };
+		9282F4C21E73543400446107 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		928E0CEE1E69E18D00A25161 /* Tank Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tank Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928E0CF11E69E18D00A25161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		928E0CF51E69E18D00A25161 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		928E0CF91E69E18D00A25161 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		928E0CFE1E69E18D00A25161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		928E0D011E69E18D00A25161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		928E0D031E69E18D00A25161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		928E0D141E69E42C00A25161 /* GamePlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayScene.swift; sourceTree = "<group>"; };
+		928E0D161E69E62D00A25161 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
+		92B169C91EBB33A100625919 /* MyTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyTileSet.sks; sourceTree = "<group>"; };
+		92E3EA7A1E7DC84B0027DEB4 /* Tank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tank.swift; sourceTree = "<group>"; };
+		92E3EA7E1E7DCFFD0027DEB4 /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
+		92E3EA801E7DD00D0027DEB4 /* Wall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		928E0CEB1E69E18D00A25161 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667F22B91FE690B200A28EA2 /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		667F22B71FE690B200A28EA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				667F22B81FE690B200A28EA2 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66A8F0821FD8848B004EF568 /* Multiplayer */ = {
+			isa = PBXGroup;
+			children = (
+				66A8F0801FD88475004EF568 /* GameKitStuff.swift */,
+				66A8F07E1FD88465004EF568 /* MultiplayerNetworking.swift */,
+			);
+			name = Multiplayer;
+			sourceTree = "<group>";
+		};
+		928E0CE51E69E18D00A25161 = {
+			isa = PBXGroup;
+			children = (
+				928E0CF01E69E18D00A25161 /* Tank Online */,
+				928E0CEF1E69E18D00A25161 /* Products */,
+				667F22B71FE690B200A28EA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		928E0CEF1E69E18D00A25161 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				928E0CEE1E69E18D00A25161 /* Tank Online.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		928E0CF01E69E18D00A25161 /* Tank Online */ = {
+			isa = PBXGroup;
+			children = (
+				667F22BA1FE690BC00A28EA2 /* Tank Online.entitlements */,
+				928E0D0C1E69E24400A25161 /* Classes */,
+				928E0D091E69E20000A25161 /* Scenes */,
+				928E0CF11E69E18D00A25161 /* AppDelegate.swift */,
+				928E0CF51E69E18D00A25161 /* Actions.sks */,
+				928E0CFE1E69E18D00A25161 /* Assets.xcassets */,
+				928E0D001E69E18D00A25161 /* LaunchScreen.storyboard */,
+				928E0D031E69E18D00A25161 /* Info.plist */,
+				6637457F1FE5822E004200C3 /* Main.storyboard */,
+			);
+			path = "Tank Online";
+			sourceTree = "<group>";
+		};
+		928E0D091E69E20000A25161 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				928E0D161E69E62D00A25161 /* StarField.sks */,
+				92B169C91EBB33A100625919 /* MyTileSet.sks */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		928E0D0C1E69E24400A25161 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				66A8F0821FD8848B004EF568 /* Multiplayer */,
+				92EF9B2E1E6B388400388998 /* Item Controller Classes */,
+				928E0D1A1E69EF6D00A25161 /* Player Class */,
+				928E0D0D1E69E25100A25161 /* Scene Classes */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		928E0D0D1E69E25100A25161 /* Scene Classes */ = {
+			isa = PBXGroup;
+			children = (
+				928E0D141E69E42C00A25161 /* GamePlayScene.swift */,
+				9282F4C21E73543400446107 /* Grid.swift */,
+				6648BD6B1FF6BBC6006935B7 /* ShootButton.swift */,
+			);
+			name = "Scene Classes";
+			sourceTree = "<group>";
+		};
+		928E0D1A1E69EF6D00A25161 /* Player Class */ = {
+			isa = PBXGroup;
+			children = (
+				92E3EA7A1E7DC84B0027DEB4 /* Tank.swift */,
+				92E3EA7E1E7DCFFD0027DEB4 /* Bullet.swift */,
+				92E3EA801E7DD00D0027DEB4 /* Wall.swift */,
+				6648BD6D1FFC1566006935B7 /* Eagle.swift */,
+				66EFCFCF2008CE3900C88696 /* Bot.swift */,
+			);
+			name = "Player Class";
+			sourceTree = "<group>";
+		};
+		92EF9B2E1E6B388400388998 /* Item Controller Classes */ = {
+			isa = PBXGroup;
+			children = (
+				928E0CF91E69E18D00A25161 /* GameViewController.swift */,
+				6637457D1FE56E0A004200C3 /* GameNavigationController.swift */,
+			);
+			name = "Item Controller Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		928E0CED1E69E18D00A25161 /* Tank Online */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928E0D061E69E18D00A25161 /* Build configuration list for PBXNativeTarget "Tank Online" */;
+			buildPhases = (
+				928E0CEA1E69E18D00A25161 /* Sources */,
+				928E0CEB1E69E18D00A25161 /* Frameworks */,
+				928E0CEC1E69E18D00A25161 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tank Online";
+			productName = "Tank Online";
+			productReference = 928E0CEE1E69E18D00A25161 /* Tank Online.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		928E0CE61E69E18D00A25161 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Can Bas";
+				TargetAttributes = {
+					928E0CED1E69E18D00A25161 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NTK42KH9H3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 928E0CE91E69E18D00A25161 /* Build configuration list for PBXProject "Tank Online" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 928E0CE51E69E18D00A25161;
+			productRefGroup = 928E0CEF1E69E18D00A25161 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				928E0CED1E69E18D00A25161 /* Tank Online */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		928E0CEC1E69E18D00A25161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928E0CFF1E69E18D00A25161 /* Assets.xcassets in Resources */,
+				928E0D021E69E18D00A25161 /* LaunchScreen.storyboard in Resources */,
+				92B169CA1EBB33A100625919 /* MyTileSet.sks in Resources */,
+				928E0D171E69E62D00A25161 /* StarField.sks in Resources */,
+				663745801FE5822E004200C3 /* Main.storyboard in Resources */,
+				928E0CF61E69E18D00A25161 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		928E0CEA1E69E18D00A25161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6637457E1FE56E0A004200C3 /* GameNavigationController.swift in Sources */,
+				928E0CFA1E69E18D00A25161 /* GameViewController.swift in Sources */,
+				66A8F07F1FD88466004EF568 /* MultiplayerNetworking.swift in Sources */,
+				928E0CF21E69E18D00A25161 /* AppDelegate.swift in Sources */,
+				9282F4C31E73543400446107 /* Grid.swift in Sources */,
+				6648BD6C1FF6BBC6006935B7 /* ShootButton.swift in Sources */,
+				66A8F0811FD88475004EF568 /* GameKitStuff.swift in Sources */,
+				66EFCFD02008CE3900C88696 /* Bot.swift in Sources */,
+				928E0D151E69E42C00A25161 /* GamePlayScene.swift in Sources */,
+				92E3EA7B1E7DC84B0027DEB4 /* Tank.swift in Sources */,
+				92E3EA811E7DD00D0027DEB4 /* Wall.swift in Sources */,
+				6648BD6E1FFC1566006935B7 /* Eagle.swift in Sources */,
+				92E3EA7F1E7DCFFD0027DEB4 /* Bullet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		928E0D001E69E18D00A25161 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				928E0D011E69E18D00A25161 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		928E0D041E69E18D00A25161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		928E0D051E69E18D00A25161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		928E0D071E69E18D00A25161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NTK42KH9H3;
+				INFOPLIST_FILE = "Tank Online/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.can.Tank-Online";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		928E0D081E69E18D00A25161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NTK42KH9H3;
+				INFOPLIST_FILE = "Tank Online/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.can.Tank-Online";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		928E0CE91E69E18D00A25161 /* Build configuration list for PBXProject "Tank Online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928E0D041E69E18D00A25161 /* Debug */,
+				928E0D051E69E18D00A25161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928E0D061E69E18D00A25161 /* Build configuration list for PBXNativeTarget "Tank Online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928E0D071E69E18D00A25161 /* Debug */,
+				928E0D081E69E18D00A25161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 928E0CE61E69E18D00A25161 /* Project object */;
+}
